@@ -31,10 +31,13 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        String desc1 = "Desk slide Desk slideDesk slideDesk slideDesk slide ";
+        String desc2 = "Desk slide Desk slideDesk slideDesk slideDesk slide ";
+        String desc3 = "Desk slide Desk slideDesk slideDesk slideDesk slide ";
         fragmentList = new ArrayList<>();
-        fragmentList.add(OnboardingFragment.newInstance("title 1","desc 1",R.drawable.img_slide_1));
-        fragmentList.add(OnboardingFragment.newInstance("title 2","desc 2",R.drawable.img_slide_1));
-        fragmentList.add(OnboardingFragment.newInstance("title 3","desc 3",R.drawable.img_slide_1));
+        fragmentList.add(OnboardingFragment.newInstance("title 1",desc1,R.drawable.img_slide_1));
+        fragmentList.add(OnboardingFragment.newInstance("title 2",desc2,R.drawable.img_slide_1));
+        fragmentList.add(OnboardingFragment.newInstance("title 3",desc3,R.drawable.img_slide_1));
 
         indicators = new ArrayList<>(NUMPAGE);
         layoutIndicator = findViewById(R.id.layout_indicator);
